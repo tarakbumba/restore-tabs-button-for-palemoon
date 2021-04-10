@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest"
+               em:type="2"
+               em:id="{e150868e-4050-43b0-b2ed-3c11f659d004}"
+               em:version="1.0"
+               em:name="Restore Tabs Button"
+               em:creator="tarakbumba"
+               em:description="Add a toolbar button onto any toolbar to undo closed tabs"
+               em:homepageURL="http://mybrowseraddon.com/undo.html"
+               em:iconURL="chrome://restoretabsbutton/skin/icon.png"
+               em:optionsType="2"
+               em:optionsURL="chrome://restoretabsbutton/content/options.xul">
+    <em:contributor>Andy Portmen</em:contributor>
+    <em:contributor>Zoolcar9 (code)</em:contributor>
+    <em:contributor>max1million (code)</em:contributor>
+    <em:contributor>Crazy-EyE (code)</em:contributor>
+    <em:contributor>lapega (icons)</em:contributor>
+    <em:targetApplication name="Pale Moon">
+      <Description em:id="{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}"
+                   em:minVersion="28.0.0a1"
+                   em:maxVersion="29.*"/>
+    </em:targetApplication>
+  </Description>
+</RDF>

@@ -1,0 +1,9 @@
+<!ENTITY restoretabsbuttonToolbar.label "Kapatılan Sekmeyi Geri Al">
+<!ENTITY undolastclosedtab.label "Son Kapatılan Sekmeyi Geri Al">
+<!ENTITY howmany.label "Pale Moon'un kaç tane kapatılan sekmeyi hatırlamasını istiyorsunuz? (0-99)">
+<!ENTITY removecontextentry.label "'Son Kapatılan Sekmeyi Geri Al' seçeneğini sağ tıklama içerik menüsünden kaldır">
+<!ENTITY oldAppearance.label "Eski simgeyi göster.(Koyu renkli temalarda faydalıdır">
+<!ENTITY showOpenAll.label "Kayar menüde &quot;Bütün Sekmeleri Geri Yükle&quot; göster">
+<!ENTITY clearHistory.label "Kayar menüde &quot;Kapatılmış Sekme Geçmişini Temizle&quot; göster">
+<!ENTITY openMenu.label "Araç çubuğunda sol tıklamayla kayar menüyü aç">
+<!ENTITY onTop.label "Kayar kontrolleri listenin en üstüne yerleştir">

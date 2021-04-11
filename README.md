@@ -2,7 +2,7 @@
 
 Restore Tabs Button allows you to restore closed tabs via a toolbar button or the right-click context menu. This add-on is forked from Undo Closed Tabs Button Firefox extension.
 
-All of code and files here are licensed under GNU GPLv2. Icons used in this add-on are derived from [Nuvola Icon Set](https://en.wikipedia.org/wiki/Nuvola) used in this extension is a creation of David Vignoni and GNU LGPLv.2.1 licensed.
+All of code and files here are licensed under Mozilla Public License (MPL) version 2.0 like original code. Icons used in this add-on are derived from [Nuvola Icon Set](https://en.wikipedia.org/wiki/Nuvola) used in this extension is a creation of David Vignoni and GNU LGPLv.2.1 licensed.
 
 #### Supports
  * Pale Moon [28.0.0a1- 29.*]

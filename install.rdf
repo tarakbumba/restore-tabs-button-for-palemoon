@@ -10,7 +10,7 @@
                em:name="Restore Tabs Button"
                em:creator="tarakbumba"
                em:description="Add a toolbar button onto any toolbar to undo closed tabs"
-               em:homepageURL="http://mybrowseraddon.com/undo.html"
+               em:homepageURL="https://github.com/tarakbumba/restore-tabs-button-for-palemoon"
                em:iconURL="chrome://restoretabsbutton/skin/icon.png"
                em:optionsType="2"
                em:optionsURL="chrome://restoretabsbutton/content/options.xul">

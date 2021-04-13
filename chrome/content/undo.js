@@ -222,49 +222,6 @@ var undoClosedButt = {
       contextEntry.setAttribute('disabled', 'true');
     }
   },
-  welcome: function () {
-    function welcome (version) {
-      var pre = gPrefService.getCharPref('extensions.restoretabsbutton.version');
-      if (pre === version) {
-        return;
-      }
-      //Showing welcome screen
-      setTimeout(function () {
-        try {
-          var newTab = getBrowser().addTab(
-            'http://mybrowseraddon.com/undo.html?v=' + version + (pre ? '&p=' + pre + '&type=upgrade' : '&type=install')
-          );
-          getBrowser().selectedTab = newTab;
-        }
-        catch (e) {}
-      }, 5000);
-      gPrefService.setCharPref('extensions.restoretabsbutton.version', version);
-    }
-
-    //Detect Firefox version
-    var version = '';
-    try {
-      version = (
-        navigator.userAgent.match(/Firefox\/([\d\.]*)/) ||
-        navigator.userAgent.match(/Thunderbird\/([\d\.]*)/)
-      )[1];
-    } catch (e) {}
-    //FF < 4.*
-    var versionComparator = Components.classes['@mozilla.org/xpcom/version-comparator;1']
-        .getService(Components.interfaces.nsIVersionComparator)
-        .compare(version, '4.0');
-    if (versionComparator < 0) {
-      var addon = Services.extMan.getItemForID('restoretabsbutton@supernova00.biz');
-      welcome(addon.version);
-    }
-    //FF > 4.*
-    else {
-      Components.utils.import('resource://gre/modules/AddonManager.jsm');
-      AddonManager.getAddonByID('restoretabsbutton@supernova00.biz', function (addon) {
-        welcome(addon.version);
-      });
-    }
-  }
 };
 
 function UCT_init() {

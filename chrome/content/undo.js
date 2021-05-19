@@ -222,6 +222,7 @@ var undoClosedButt = {
       contextEntry.setAttribute('disabled', 'true');
     }
   },
+};
 function UCT_init() {
   // Install Button
   if (gPrefService.getBoolPref('extensions.restoretabsbutton.firstRun')) {

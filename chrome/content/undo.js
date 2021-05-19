@@ -222,32 +222,6 @@ var undoClosedButt = {
       contextEntry.setAttribute('disabled', 'true');
     }
   },
-  welcome: function () {
-    function welcome (version) {
-      var pre = gPrefService.getCharPref('extensions.restoretabsbutton.version');
-      if (pre === version) {
-        return;
-      }
-      //Showing welcome screen
-      setTimeout(function () {
-        try {
-          var newTab = getBrowser().addTab(
-            'https://github.com/tarakbumba/restore-tabs-button-for-palemoon/blob/main/README.md' + version + (pre ? '&p=' + pre + '&type=upgrade' : '&type=install')
-          );
-          getBrowser().selectedTab = newTab;
-        }
-        catch (e) {}
-      }, 5000);
-      gPrefService.setCharPref('extensions.restoretabsbutton.version', version);
-    }
-
-    Components.utils.import('resource://gre/modules/AddonManager.jsm');
-    AddonManager.getAddonByID('{e150868e-4050-43b0-b2ed-3c11f659d004}', function (addon) {
-      welcome(addon.version);
-    });
-  }
-};
-
 function UCT_init() {
   // Install Button
   if (gPrefService.getBoolPref('extensions.restoretabsbutton.firstRun')) {
@@ -261,8 +235,6 @@ function UCT_init() {
     document.getElementById('uctb-key').setAttribute('key', key);
     document.getElementById('uctb-key').setAttribute('modifiers', modifier);
   }
-  // Show welcome if needed
-  undoClosedButt.welcome();
   // Change icon if needed
   try {
     if (gPrefService.getBoolPref('extensions.restoretabsbutton.oldAppearance')) {

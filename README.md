@@ -4,7 +4,7 @@ Restore Tabs Button allows you to restore closed tabs via a toolbar button or th
 
 Restore Tabs Button is designed to open recently closed tabs in your browser. With this add-on installed, it is still possible to use the built-in close tab functionality of the browser. If you want to contribute to the development of this addon, please fork it on GitHub and push your changes to a named branch. Moreover, you can review all the comments made on GitHub commits.
 
-###Main Features of Restore Tabs Button:
+### Main Features of Restore Tabs Button:
 
 *    Provides a through undo close tab functionality by letting you choose the desired closed tab from the available list.
 *    Easily have access to undo close tab functionality of the browser right from a toolbar popup.
